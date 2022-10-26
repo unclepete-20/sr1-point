@@ -117,10 +117,17 @@ class Render(object):
     
     
         
-    '''
-    --- SR2: LINES
-    
-    '''
+    def glInit(self):
+        
+        self.glCreateWindow(200, 200)
+
+        self.glViewPort(20, 20, 100, 100)
+
+        self.glClearColor(0.25, 1, 0.50)
+
+        self.glClear()
+
+        self.glVertex(1, 1)
         
     
     def glFinish(self, filename):
